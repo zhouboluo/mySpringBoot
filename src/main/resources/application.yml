@@ -1,0 +1,9 @@
+spring: 
+  application:
+    name: myspringboot
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 300Mb
+      max-request-size: 102400Mb

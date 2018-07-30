@@ -1,0 +1,42 @@
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://139.196.127.115:3306/study_springboot?characterEncoding=utf8&useSSL=false
+    username: root
+    password: Zhou1989!!
+    tomcat:
+      max-active: 500
+      min-idle: 20
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate: 
+      ddl-auto: update
+  devtools:
+    restart:
+      exclude: WEB-INF/**
+      enabled: true
+      additional-paths: src/main/java
+
+#Server
+server: 
+  port: 8888
+  tomcat: 
+    uri-encoding: utf-8
+    
+#logging:
+#  level:
+#    root: DEBUG
+
+#page
+pagecount: 10
+page: 1
+maxpagecount: 1000
+#upload path
+upload_file_path: public/upload/
+#export path
+export_file_path: public/export/
+
+weixin:
+  app-id: wx6d4347d5cabe4858
+  app-secret: b33efff07ef069ddd11ba05bbcd27c5d
